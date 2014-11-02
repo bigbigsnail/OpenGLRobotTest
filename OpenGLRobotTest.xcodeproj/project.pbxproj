@@ -1,0 +1,248 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D56A973B1A040E2F00DE96B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D56A973A1A040E2F00DE96B2 /* main.cpp */; };
+		D56A97421A040E6000DE96B2 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56A97411A040E6000DE96B2 /* OpenGL.framework */; };
+		D56A97441A040E6900DE96B2 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D56A97431A040E6900DE96B2 /* GLUT.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D56A97351A040E2F00DE96B2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D56A97371A040E2F00DE96B2 /* OpenGLRobotTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLRobotTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D56A973A1A040E2F00DE96B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D56A97411A040E6000DE96B2 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D56A97431A040E6900DE96B2 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D56A97341A040E2F00DE96B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56A97441A040E6900DE96B2 /* GLUT.framework in Frameworks */,
+				D56A97421A040E6000DE96B2 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D56A972E1A040E2F00DE96B2 = {
+			isa = PBXGroup;
+			children = (
+				D56A97431A040E6900DE96B2 /* GLUT.framework */,
+				D56A97411A040E6000DE96B2 /* OpenGL.framework */,
+				D56A97391A040E2F00DE96B2 /* OpenGLRobotTest */,
+				D56A97381A040E2F00DE96B2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D56A97381A040E2F00DE96B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D56A97371A040E2F00DE96B2 /* OpenGLRobotTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D56A97391A040E2F00DE96B2 /* OpenGLRobotTest */ = {
+			isa = PBXGroup;
+			children = (
+				D56A973A1A040E2F00DE96B2 /* main.cpp */,
+			);
+			path = OpenGLRobotTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D56A97361A040E2F00DE96B2 /* OpenGLRobotTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D56A973E1A040E2F00DE96B2 /* Build configuration list for PBXNativeTarget "OpenGLRobotTest" */;
+			buildPhases = (
+				D56A97331A040E2F00DE96B2 /* Sources */,
+				D56A97341A040E2F00DE96B2 /* Frameworks */,
+				D56A97351A040E2F00DE96B2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenGLRobotTest;
+			productName = OpenGLRobotTest;
+			productReference = D56A97371A040E2F00DE96B2 /* OpenGLRobotTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D56A972F1A040E2F00DE96B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = bigbigsnail;
+				TargetAttributes = {
+					D56A97361A040E2F00DE96B2 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
+			};
+			buildConfigurationList = D56A97321A040E2F00DE96B2 /* Build configuration list for PBXProject "OpenGLRobotTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D56A972E1A040E2F00DE96B2;
+			productRefGroup = D56A97381A040E2F00DE96B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D56A97361A040E2F00DE96B2 /* OpenGLRobotTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D56A97331A040E2F00DE96B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D56A973B1A040E2F00DE96B2 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D56A973C1A040E2F00DE96B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.9;
+			};
+			name = Debug;
+		};
+		D56A973D1A040E2F00DE96B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx10.9;
+			};
+			name = Release;
+		};
+		D56A973F1A040E2F00DE96B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D56A97401A040E2F00DE96B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D56A97321A040E2F00DE96B2 /* Build configuration list for PBXProject "OpenGLRobotTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56A973C1A040E2F00DE96B2 /* Debug */,
+				D56A973D1A040E2F00DE96B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D56A973E1A040E2F00DE96B2 /* Build configuration list for PBXNativeTarget "OpenGLRobotTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D56A973F1A040E2F00DE96B2 /* Debug */,
+				D56A97401A040E2F00DE96B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D56A972F1A040E2F00DE96B2 /* Project object */;
+}
