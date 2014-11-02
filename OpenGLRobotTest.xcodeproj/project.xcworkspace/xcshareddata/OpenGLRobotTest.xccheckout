@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4795C5B0-254E-440E-B2D5-72540512CFF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OpenGLRobotTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C540F7A2A9008683962EA66EEDB02A677F08CA37</key>
+		<string>https://github.com/bigbigsnail/OpenGLRobotTest.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OpenGLRobotTest.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C540F7A2A9008683962EA66EEDB02A677F08CA37</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/bigbigsnail/OpenGLRobotTest.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C540F7A2A9008683962EA66EEDB02A677F08CA37</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C540F7A2A9008683962EA66EEDB02A677F08CA37</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OpenGLRobotTest</string>
+		</dict>
+	</array>
+</dict>
+</plist>
