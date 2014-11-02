@@ -8,8 +8,9 @@
 
 #include <OpenGL/OpenGL.h>
 #include <GLUT/GLUT.h>
+#include <math.h>
+#include <stdlib.h>
 #include <iostream>
-
 using namespace std;
 
 GLfloat noMat[] = {0.0, 0.0, 0.0, 1.0};
@@ -41,16 +42,19 @@ void init()
     GLfloat ambient[] = {0.0, 0.0, 0.0, 1.0};
     GLfloat diffuse[] = {1.0, 1.0, 1.0, 1.0};
     GLfloat position[] = {0.0, 5.0, 10.0, 0.0};
-    //GLfloat lmodelAmbient[] = {0.4, 0.4, 0.4, 1.0};
-    //GLfloat localView[] = {0.0};
+    GLfloat lmodelAmbient[] = {0.4, 0.4, 0.4, 1.0};
+    GLfloat localView[] = {0.0};
     
     glClearColor(0, 0, 0, 0);
     
     glLightfv(GL_LIGHT0, GL_AMBIENT, ambient);
     glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuse);
     glLightfv(GL_LIGHT0, GL_POSITION, position);
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, lmodelAmbient);
+    glLightModelfv(GL_LIGHT_MODEL_LOCAL_VIEWER, localView);
     
-    glShadeModel(GL_SMOOTH);
+    
+    //glShadeModel(GL_SMOOTH);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
@@ -62,19 +66,19 @@ void drawBody()
 {
     glPushMatrix();
     
-    glTranslatef(0.0, 1.5, 0.0);
-    glScalef(0.5, 1.0, 0.4);
+    glTranslatef(0, 1.5, 0);
+    glScalef(0.5, 1, 0.4);
     
     glMaterialfv(GL_FRONT, GL_AMBIENT, matAmbientColor);
-    glMaterialfv(GL_FRONT, GL_DIFFUSE, matDiffuse);
-    glMaterialfv(GL_FRONT, GL_SPECULAR, matSpecular);
-    glMaterialfv(GL_FRONT, GL_SHININESS, highShininess);
-    glMaterialfv(GL_FRONT, GL_EMISSION, noMat);
+    //glMaterialfv(GL_FRONT, GL_DIFFUSE, matDiffuse);
+    //glMaterialfv(GL_FRONT, GL_SPECULAR, matSpecular);
+    //glMaterialfv(GL_FRONT, GL_SHININESS, highShininess);
+    //glMaterialfv(GL_FRONT, GL_EMISSION, noMat);
     
-    glutSolidCube(4.0);
+    glutSolidCube(4);
     
     glPopMatrix();
-
+    
 }
 
 //Draw left & right shoulder of the robot
@@ -87,21 +91,22 @@ void drawLeftShoulder()
     glMaterialfv(GL_FRONT, GL_SPECULAR, noMat);
     glMaterialfv(GL_FRONT, GL_SHININESS, noShininess);
     glMaterialfv(GL_FRONT, GL_EMISSION, noMat);
-    glTranslatef(1.5, 3.0, 0.0);
-    glRotatef(leftShoulder, 1.0, 0.0, 0.0);
+    glTranslatef(1.5, 3, 0);
+    glRotatef(leftShoulder, 1, 0, 0);
     
-    glTranslatef(0.0, -0.5, 0.0);
-    glScalef(0.4, 1.0, 0.5);
-    glutSolidCube(2.0);
+    glTranslatef(0, -0.5, 0);
+    glScalef(0.4, 1, 0.5);
+    glutSolidCube(2);
     
-    glScalef(1 / 0.4, 1.0 / 1.0, 1 / 0.5);
-    glTranslatef(0.0, -1.4, 0.0);
-    glRotatef(leftElbow, 1.0, 0.0, 0.0);
+    glScalef(1 / 0.4, 1 / 1, 1 / 0.5);
+    glTranslatef(0, -1.4, 0);
+    glRotatef(leftElbow, 1, 0, 0);
     glutWireSphere(0.4, 200, 500);
+    //glutSolidSphere(0.4, 200, 500);
     
-    glScalef(0.4, 1.0, 0.5);
-    glTranslatef(0.0, -1.4, 0.0);
-    glutSolidCube(2.0);
+    glScalef(0.4, 1, 0.5);
+    glTranslatef(0, -1.4, 0);
+    glutSolidCube(2);
     
     glPopMatrix();
 }
@@ -115,21 +120,21 @@ void drawRightShoulder()
     glMaterialfv(GL_FRONT, GL_SPECULAR, noMat);
     glMaterialfv(GL_FRONT, GL_SHININESS, noShininess);
     glMaterialfv(GL_FRONT, GL_EMISSION, noMat);
-    glTranslatef(-1.5, 3.0, 3.0);
-    glRotatef(rightShoulder, 1.0, 0.0, 0.0);
+    glTranslatef(-1.5, 3, 0);
+    glRotatef(rightShoulder, 1, 0, 0);
     
-    glTranslatef(0.0, -0.5, 0.0);
-    glScalef(0.4, 1.0, 0.5);
-    glutSolidCube(2.0);
+    glTranslatef(0, -0.5, 0);
+    glScalef(0.4, 1, 0.5);
+    glutSolidCube(2);
     
-    glScalef(1 / 0.4, 1.0 / 1.0, 1 / 0.5);
-    glTranslatef(0.0, -1.4, 0.0);
-    glRotatef(rightElbow, 1.0, 0.0, 0.0);
+    glScalef(1 / 0.4, 1 / 1, 1 / 0.5);
+    glTranslatef(0, -1.4, 0);
+    glRotatef(rightElbow, 1, 0, 0);
     glutWireSphere(0.4, 200, 500);
     
-    glScalef(0.4, 1.0, 0.5);
-    glTranslatef(0.0, -1.4, 0.0);
-    glutSolidCube(2.0);
+    glScalef(0.4, 1, 0.5);
+    glTranslatef(0, -1.4, 0);
+    glutSolidCube(2);
     
     glPopMatrix();
 }
@@ -145,7 +150,7 @@ void drawHead()
     glMaterialfv(GL_FRONT, GL_SPECULAR, matSpecular);
     glMaterialfv(GL_FRONT, GL_SHININESS, lowShininess);
     glMaterialfv(GL_FRONT, GL_EMISSION, noMat);
-
+    
     glTranslatef(0.0, 3.5, 0.0);
     glRotatef(neck, 0.0, 0.0, 1.0);
     glTranslatef(0.0, 1.0, 0.0);
@@ -215,6 +220,8 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     
+    
+    
     glPushMatrix();
     
     glRotatef(angle, 0.0, 1.0, 0.0);
@@ -239,11 +246,12 @@ void reshape(int w, int h)
     glViewport(0, 0, w, h);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glOrtho(-8.0, 8.0, -8.0, 8.0, -10.0, 10.0);
+    glOrtho(-8.0, 8.0, -8.0, 8.0, 1.0, 20.0);
+    //gluPerspective(80.0f, (GLfloat)w/(GLfloat)h, 1.0f, 20.0f);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(0.0, 4.0, 10.0, 0.0, 4.0, 0.0, 0.0, 1.0, 0.0);
- }
+    gluLookAt(0.0, 4.0, 10, 0.0, 4, 0.0, 0.0, 1.0, 0.0);
+}
 
 void keyboard(unsigned char key, int x, int y)
 {
@@ -340,6 +348,7 @@ void keyboard(unsigned char key, int x, int y)
                     flagRightElbow = 1;
                 }
             }
+            
             glutPostRedisplay();
             break;
         case '8':
@@ -420,7 +429,7 @@ int main(int argc, char * argv[]) {
     cout<<"按键「3」为头部旋转\n";
     cout<<"按键「4」，「5」，「6」，「7」为手臂旋转\n";
     cout<<"按键「8」，「9」「a」，「b」为腿部旋转\n";
-
+    
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RED);
     glutInitWindowSize(600, 600);
